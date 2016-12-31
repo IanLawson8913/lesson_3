@@ -80,4 +80,7 @@ flintstones.assoc("Barney")
 
 flintstones = ["Fred", "Barney", "Wilma", "Betty", "Pebbles", "BamBam"]
 
-[flintstones, [0, 1, 2, 3, 4, 5]].to_h
+flintstones_hash = {}
+flintstones.each_with_index do |name, index|
+  flintstones_hash[name] = index
+end
